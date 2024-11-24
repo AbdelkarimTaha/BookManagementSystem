@@ -1,0 +1,72 @@
+.book-list-container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  font-family: Arial, sans-serif;
+}
+
+h1 {
+  text-align: center;
+  color: #333;
+}
+
+.loading {
+  text-align: center;
+  color: #888;
+  font-size: 1.2em;
+}
+
+.error {
+  text-align: center;
+  color: red;
+  font-weight: bold;
+}
+
+.book-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 20px 0;
+}
+
+.book-table th, .book-table td {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: center;
+}
+
+.book-table th {
+  background-color: #f4f4f4;
+  font-weight: bold;
+}
+
+.book-table tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+.book-table tr:hover {
+  background-color: #f1f1f1;
+}
+
+button {
+  margin: 0 5px;
+  padding: 5px 10px;
+  border: none;
+  cursor: pointer;
+  color: white;
+}
+
+button:hover {
+  opacity: 0.9;
+}
+
+button:nth-child(1) {
+  background-color: #007bff; /* Blue: View */
+}
+
+button:nth-child(2) {
+  background-color: #ffc107; /* Yellow: Edit */
+}
+
+button:nth-child(3) {
+  background-color: #dc3545; /* Red: Delete */
+}

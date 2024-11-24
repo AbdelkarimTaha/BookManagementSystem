@@ -1,0 +1,39 @@
+<div class="book-list-container">
+  <h1>Book List</h1>
+
+  <div class="actions">
+    <button class="btn btn-primary" [routerLink]="['/add-book']">Add New Book</button>
+  </div>
+
+
+  <table *ngIf="books.length > 0; else noBooks" class="book-table">
+    <thead>
+      <tr>
+        <th>ID</th>
+        <th>Title</th>
+        <th>Genre</th>
+        <th>Author</th>
+        <th>Published Year</th>
+        <th>Actions</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let book of books">
+        <td>{{ book.id }}</td>
+        <td>{{ book.title }}</td>
+        <td>{{ book.genre }}</td>
+        <td>{{ book.author }}</td>
+        <td>{{ book.publishedYear }}</td>
+        <td>
+          <button (click)="viewBook(book.id)">View</button>
+          <button (click)="editBook(book.id)">Edit</button>
+          <button (click)="deleteBook(book.id)">Delete</button>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+
+  <ng-template #noBooks>
+    <p>No books available. Please add some books.</p>
+  </ng-template>
+</div>

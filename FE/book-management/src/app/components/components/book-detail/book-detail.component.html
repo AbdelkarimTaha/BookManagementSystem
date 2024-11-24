@@ -1,0 +1,16 @@
+<div class="book-details-container">
+  <h1>Book Details</h1>
+
+  <div *ngIf="book; else loading">
+    <p><strong>Title:</strong> {{ book.title }}</p>
+    <p><strong>Genre:</strong> {{ book.genre }}</p>
+    <p><strong>Author:</strong> {{ book.author }}</p>
+    <p><strong>Published Year:</strong> {{ book.publishedYear }}</p>
+
+    <button class="btn btn-primary" (click)="goBack()">Back</button>
+  </div>
+
+  <ng-template #loading>
+    <p>Loading book details...</p>
+  </ng-template>
+</div>
