@@ -3,7 +3,7 @@ import { CommonModule } from '@angular/common';
 import { ReactiveFormsModule, FormBuilder, FormGroup, Validators } from '@angular/forms';
 import { Router, RouterModule } from '@angular/router';
 import { HttpClientModule } from '@angular/common/http';
-import { BookService } from '../../../services/book.service';
+import { BookService } from '../../services/book.service';
 
 @Component({
   selector: 'app-add-book',

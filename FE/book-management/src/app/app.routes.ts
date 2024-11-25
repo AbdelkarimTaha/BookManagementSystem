@@ -1,8 +1,8 @@
 import { RouterModule, Routes } from '@angular/router';
-import { BookListComponent } from './components/components/book-list/book-list.component';
-import { BookDetailComponent } from './components/components/book-detail/book-detail.component';
-import { AddBookComponent } from './components/components/add-book/add-book.component';
-import { EditBookComponent } from './components/components/edit-book/edit-book.component';
+import { BookListComponent } from './components/book-list/book-list.component';
+import { BookDetailComponent } from './components/book-detail/book-detail.component';
+import { AddBookComponent } from './components/add-book/add-book.component';
+import { EditBookComponent } from './components/edit-book/edit-book.component';
 import { NgModule } from '@angular/core';
 
 export const routes: Routes = [

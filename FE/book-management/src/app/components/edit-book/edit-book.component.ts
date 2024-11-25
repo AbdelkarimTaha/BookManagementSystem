@@ -3,7 +3,7 @@ import { ActivatedRoute, Router, RouterModule } from '@angular/router';
 import { CommonModule } from '@angular/common';
 import { ReactiveFormsModule, FormBuilder, FormGroup, Validators } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
-import { BookService } from '../../../services/book.service';
+import { BookService } from '../../services/book.service';
 
 @Component({
   selector: 'app-edit-book',
